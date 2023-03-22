@@ -4,9 +4,9 @@
   <ul>
     <% @list.errors.full_messages.each do |message| %>
       <li><%= message %></li>
-    <% end %>  
+    <% end %>
   </ul>
-<% end %>  
+<% end %>
 <!--form_with部分-->
 <%= form_with model: @list, url:'/lists', method: :post do |f| %>
 　<h4>タイトル</h4>
